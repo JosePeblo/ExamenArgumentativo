@@ -17,11 +17,9 @@ class NetworkApiService {
         
         let response = await taskReq.serializingData().response
         
-        
         switch response.result {
         case .success(let data):
             do {
-                print(String(data: data, encoding: .ascii) ?? "no se pude pa")
                 return try JSONDecoder().decode(T.self, from: data)
             } catch {
                 debugPrint(error)
