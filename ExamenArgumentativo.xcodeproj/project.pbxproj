@@ -14,6 +14,11 @@
 		EE595FCE2B0FC3B400A9C816 /* CovidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FCD2B0FC3B400A9C816 /* CovidResponse.swift */; };
 		EE595FD02B0FC60900A9C816 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FCF2B0FC60900A9C816 /* NetworkApiService.swift */; };
 		EE595FD32B0FC62200A9C816 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE595FD22B0FC62200A9C816 /* Alamofire */; };
+		EE595FD52B0FC87F00A9C816 /* CaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FD42B0FC87F00A9C816 /* CaseRepository.swift */; };
+		EE595FD72B0FC8B900A9C816 /* CovidApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FD62B0FC8B900A9C816 /* CovidApi.swift */; };
+		EE595FD92B0FCA8A00A9C816 /* CaseListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FD82B0FCA8A00A9C816 /* CaseListRequirement.swift */; };
+		EE595FDB2B0FCBB000A9C816 /* CaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FDA2B0FCBB000A9C816 /* CaseListViewModel.swift */; };
+		EE595FDD2B0FCCB700A9C816 /* CaseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE595FDC2B0FCCB700A9C816 /* CaseListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		EE595FBE2B0FC0BB00A9C816 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE595FCD2B0FC3B400A9C816 /* CovidResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidResponse.swift; sourceTree = "<group>"; };
 		EE595FCF2B0FC60900A9C816 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
+		EE595FD42B0FC87F00A9C816 /* CaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseRepository.swift; sourceTree = "<group>"; };
+		EE595FD62B0FC8B900A9C816 /* CovidApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidApi.swift; sourceTree = "<group>"; };
+		EE595FD82B0FCA8A00A9C816 /* CaseListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListRequirement.swift; sourceTree = "<group>"; };
+		EE595FDA2B0FCBB000A9C816 /* CaseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListViewModel.swift; sourceTree = "<group>"; };
+		EE595FDC2B0FCCB700A9C816 /* CaseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		EE595FC62B0FC24300A9C816 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EE595FD82B0FCA8A00A9C816 /* CaseListRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 		EE595FC82B0FC25400A9C816 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EE595FDA2B0FCBB000A9C816 /* CaseListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -112,6 +124,7 @@
 		EE595FC92B0FC25A00A9C816 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE595FDC2B0FCCB700A9C816 /* CaseListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 		EE595FCB2B0FC29400A9C816 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				EE595FD42B0FC87F00A9C816 /* CaseRepository.swift */,
+				EE595FD62B0FC8B900A9C816 /* CovidApi.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -215,10 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE595FD92B0FCA8A00A9C816 /* CaseListRequirement.swift in Sources */,
+				EE595FDD2B0FCCB700A9C816 /* CaseListView.swift in Sources */,
+				EE595FD72B0FC8B900A9C816 /* CovidApi.swift in Sources */,
 				EE595FBA2B0FC0B700A9C816 /* ContentView.swift in Sources */,
 				EE595FCE2B0FC3B400A9C816 /* CovidResponse.swift in Sources */,
 				EE595FB82B0FC0B700A9C816 /* ExamenArgumentativoApp.swift in Sources */,
 				EE595FD02B0FC60900A9C816 /* NetworkApiService.swift in Sources */,
+				EE595FDB2B0FCBB000A9C816 /* CaseListViewModel.swift in Sources */,
+				EE595FD52B0FC87F00A9C816 /* CaseRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
