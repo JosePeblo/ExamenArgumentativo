@@ -7,11 +7,13 @@
 
 import Foundation
 
+struct CovidCase: Codable {
+    var total: Int
+    var new: Int
+}
+
 struct CovidResponse: Codable, Identifiable {
-    struct CovidCase: Codable {
-        var total: Int
-        var new: Int
-    }
+    
     var id = UUID()
     var country: String
     var region: String
