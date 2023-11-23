@@ -10,16 +10,27 @@ import Charts
 
 struct CaseListView: View {
     @StateObject var viewModel: CaseListViewModel
-
     var body: some View {
         VStack {
+            Image("cov")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 200)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 10)
+                .padding(.bottom)
+            
+            Text("Analyse the worst infection day by country")
+                .font(.headline)
+            
             HStack {
                 Text("Country:")
+            
                 TextField("Country", text: $viewModel.country)
                     .textFieldStyle(.roundedBorder)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                    
             }
             
         
@@ -35,6 +46,7 @@ struct CaseListView: View {
                 Text("Fetch Data")
             }.buttonStyle(.bordered)
 
+            Spacer()
         }.padding(.horizontal, 16)
             .padding(.vertical, 32)
     }
